@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 class WelcomeController {
 
 	@GetMapping("/")
+	@LogExecutionTime
 	public String welcome() {
 		return "welcome";
 	}
